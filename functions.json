@@ -1,0 +1,34 @@
+{
+    "allowCustomDataForDataTypeAny": true,
+    "functions": [
+        {
+            "description": "Send data to DataForSBERT and get the response.",
+            "id": "DATAFORSBERT",
+            "name": "DATAFORSBERT",
+            "parameters": [
+                {
+                    "description": "My productSKU data.",
+                    "dimensionality": "matrix",
+                    "name": "ProductSKU",
+                    "type": "number"
+                },
+                {
+                    "description": "The input data to parse.",
+                    "dimensionality": "matrix",
+                    "name": "VendorName",
+                    "type": "string"
+                },
+                {
+                    "description": "The input data to parse.",
+                    "dimensionality": "matrix",
+                    "name": "ProductName",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix",
+                "type": "string"
+            }
+        }
+    ]
+}
